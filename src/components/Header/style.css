@@ -1,0 +1,11 @@
+.headerContent {
+    border: 1px solid pink;
+    width: 100vw;
+}
+
+.headerTitle {
+    font-size: 1vw;
+    text-align:left;
+    text-decoration: italic;
+    padding: 2.5%;
+}

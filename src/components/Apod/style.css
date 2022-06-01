@@ -1,0 +1,64 @@
+.apodContainer {
+    display: flex;
+    flex-direction: column;
+    height: 87vh;
+    padding: 1px;
+
+}
+
+
+.apodContent {
+    border: 1px solid red;
+    display: flex;
+    height: 100%;
+
+}
+
+.apodNasaHeader {
+    border: 1px solid red;
+    font-size: 1.25vw;
+}
+
+.apodImg {
+    border: 1px solid black;
+    width: 50vw;
+    border-radius: .65em;
+    height: 100%;
+}
+
+.apodDetails{
+height: 100%;
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-content: center;
+height: 100%;
+
+
+}
+.apodTitle{
+    font-size: 2.5vw;
+
+}
+.apodExplanation {
+    height: 60vh;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+display: flex;
+flex-direction: column;
+    font-size: 1.5vw;
+    line-height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.apodDate {
+    margin-bottom: 2%;
+
+}
+
+/* .apodGetMore {
+
+} */

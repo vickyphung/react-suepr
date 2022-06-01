@@ -1,0 +1,65 @@
+.nav {
+    width: 100vw;
+    height: auto;
+}
+.navContent{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding:  1rem;
+}
+
+.navIcon{
+    display:flex;
+    gap: 2rem;
+
+}
+.navIconImg {
+    width: 5.2vw;
+    padding: 4%;
+    }
+
+
+.navTitle {
+    display: inline-flex;
+    text-decoration: none;
+    color: antiquewhite;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2em;
+
+}
+.navLinks {
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: .8rem;
+
+}
+
+  .listItem {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+
+    
+  }
+  
+  .nav div.active {
+    background-color: #555;
+    
+  }
+  
+  .listItem:hover {
+    border: 1px solid #555;
+}
