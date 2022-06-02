@@ -11,14 +11,12 @@ JSON
 
 components
 hooks
-    state
-    effect
-    reducer
+    useState
+    useEffect
+    useReducer
+    useResolvedPath, nav links provides an absolute path
+    useMatch, nav links finds path within directory
 props
-
-async, await, try, catch
-pagination
-stateless function components
 
 
 

@@ -6,6 +6,17 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Apod from "./components/Apod";
 import Footer from "./components/Footer";
+import Card from './components/Apod/Card'
+
+
+
+
+
+
+const [showMore, setShow] = useState(false);
+
+
+
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 Fix NavBar Styling Links
 APOD, get more pics rnadom 5
 APOD, get more via date
-
+Make all fonts REsponsive like header
 
 
 

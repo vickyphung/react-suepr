@@ -39,7 +39,8 @@ useEffect(() => {
 //async, await. TRY, CATCH.
 //.get api endpoint
 //include process.env in our api key in endpoint so it is able to read the .env file
-//sets setApodData to response from the  api fetch
+//sets setApodData to response from the  api fetch, or...
+// ...fetching the data from our API and setting it as the new value to our data variable
 
 // const fetchData = async () => {
 //   let response = await axios.get(
