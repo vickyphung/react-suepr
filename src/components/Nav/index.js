@@ -19,19 +19,21 @@ export default function Nav() {
             />
      
           </Link>
-          <text className="navTitle">Under Another Sky</text>
+          <p className="navTitle">Under Another Sky</p>
      </div>
         <div className="navLinks">
         <li className="navLinks">
           <CustomLink  to="/about">About</CustomLink>
           <CustomLink  to="/apod">APOD</CustomLink>
-          <Link className="navLinks" to='/'>To Do</Link>
+          {/* <CustomLink  to="/todo">To Do</CustomLink> */}
+
+          {/* <Link className="navLinks" to='/'>To Do</Link>
           <Link className="navLinks" to='/'>Blog</Link>
           <Link className="navLinks" to='/'>Places</Link>
           <Link className="navLinks" to='/'>Reddit</Link>
           <Link className="navLinks" to='/'>Links</Link>
 
-          <Link className="navLinks" to='/'>Philosophy</Link>
+          <Link className="navLinks" to='/'>Philosophy</Link> */}
 
         </li>
       </div>

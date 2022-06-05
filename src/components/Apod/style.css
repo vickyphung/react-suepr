@@ -1,64 +1,60 @@
 .apodContainer {
     display: flex;
     flex-direction: column;
-    height: 87vh;
+    width: 99vw;
     padding: 1px;
-
+    height: auto;
+    margin-bottom: 10%;
 }
 
-
 .apodContent {
-    border: 1px solid red;
     display: flex;
-    height: 100%;
+    flex-direction: column;
 
 }
 
 .apodNasaHeader {
-    border: 1px solid red;
     font-size: 1.25vw;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 3%;
 }
-
+.apodDate{
+    font-size: 1.5vw;
+}
 .apodImg {
-    border: 1px solid black;
-    width: 50vw;
+    width: auto;
     border-radius: .65em;
-    height: 100%;
+    height: auto;
+    max-height: 100vh;
 }
 
 .apodDetails{
-height: 100%;
-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-content: center;
-height: 100%;
-
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-.apodTitle{
-    font-size: 2.5vw;
 
+.apodTitle{
+    font-size: 4.5vw;
+    margin: 1%;
 }
 .apodExplanation {
-    height: 60vh;
-    width: 100%;
-    padding-left: 8%;
-    padding-right: 8%;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
     font-size: 1.5vw;
-    line-height: 2.5rem;
     justify-content: center;
     align-items: center;
 }
 
 .apodDate {
     margin-bottom: 2%;
-
 }
 
-/* .apodGetMore {
-
-} */
+.apodExplanation {
+    font-size: 1vw;
+}

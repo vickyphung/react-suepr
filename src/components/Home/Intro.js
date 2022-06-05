@@ -12,13 +12,6 @@ const greeting = "Mare cœlo miscere"
          hello. i am developing this website for personal use, learning, and being cool. </p>
     </div>
 
-      <div className='testingProps'>
-
-        <p>{greeting}, {props.name}</p>
-
-
-      </div>
-
 
 
 

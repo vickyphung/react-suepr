@@ -13,10 +13,10 @@ function Weather() {
     windSpeed: 0,
   })
 
-  const [formData, setFormData] = useState({
-    lat: 0,
-    lon: 0
-  })
+  // const [formData, setFormData] = useState({
+  //   lat: 0,
+  //   lon: 0
+  // })
 
   const [latAndLon, setLatAndLon] = useState({
     lat: 38.88,
@@ -26,7 +26,7 @@ function Weather() {
   useEffect(() => {
     const fetchData = async () => {
       console.log('test');
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latAndLon.lat}&lon=${latAndLon.lon}&units=imperial&appid=67811363e42214b8de335480014f721e`)
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=38.820450&lon=-77.050552&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`)
       const weatherResponse = response.data
       setWeatherData({
         temp: weatherResponse.main.temp,
@@ -50,7 +50,7 @@ function Weather() {
 //   }
   
   return (
-    <div className="App">
+    <div className="weather">
         <div className="weatherWid">      
           <h2>
             {weatherData.temp} °F <br></br>
@@ -61,14 +61,7 @@ function Weather() {
           </p>
           <img className="weatherIcon" alt="weather icon" src={`http://openweathermap.org/img/wn/${weatherData.iconCode}@2x.png`}/>
 
-          {/* <p className="weatherForm">
-            Want to know the weather somewhere else?
-          </p>
-          <form onSubmit={handleSubmit}>
-            <input name="lat" id="lat" placeholder="  Latitude" onChange={handleChange} /> <br></br>
-            <input name="lon" id="lon" placeholder="  Longitude" onChange={handleChange} /> <br></br>
-            <input type="submit" />
-          </form>  */}
+
 
           </div>
         </div>
