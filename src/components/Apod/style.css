@@ -35,6 +35,7 @@
     color: white;
     font-weight: bold;
     height: 9vh;
+    width: 100%;
     }
 
 .apodDate{
@@ -124,7 +125,6 @@
     border-radius: .5em;
     height: 9vh;
     margin: 1rem;
-    width: 100%;
 }
 
 .dateSubmit {
@@ -175,3 +175,6 @@
 }
 
 
+.navApodLinks{
+    margin-right: 2em;
+}

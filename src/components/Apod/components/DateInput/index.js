@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import '../../style.css'
+import ApodDate from '../ApodDate';
 
 //set the formData as a prop to send to ApodDate component
 function DateInput(props) {
@@ -41,6 +42,9 @@ function DateInput(props) {
           <input className="dateSubmit" type="submit" value="Submit" />
         </form>
     </div>
+
+<div><ApodDate /></div>
+
   </div>
   )
 

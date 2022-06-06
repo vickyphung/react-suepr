@@ -4,8 +4,8 @@ import axios from 'axios'
 import { useState, useEffect } from "react";
 
 const ApodDate = (props) => {
-const [apodData, setApodData] = useState({});
-const [readMore, setReadMore]=useState(false);
+    const [apodData, setApodData] = useState({});
+
     useEffect(()=>{
         const fetchData = async () => {
             if (props.testDate) {
@@ -22,24 +22,23 @@ const [readMore, setReadMore]=useState(false);
 
     return (
         <div className="dateContainer">
-        <div className='apodTitle'>{apodData.title}<br></br>
-        <span className='apodDate'>{apodData.date}</span></div>
-        <div className='apodImg'>
-          <a href={apodData.hdurl}>
-            <img src={apodData.url} 
-            className='apodImg'
-            width="auto" 
-            />
-          </a>
-        </div>
-        <div className='apodExplanation'>
-        {apodData.explanation}
-        </div>
-
+            <div className='apodTitle'>{apodData.title}<br></br>
+                <span className='apodDate'>{apodData.date}</span>
+            </div>
+            <div className='apodImg'>
+                 <a href={apodData.hdurl}>
+                    <img src={apodData.url} 
+                   className='apodImg'
+                    width="auto" 
+                    />
+                </a>
+            </div>
+            <div className='apodExplanation'>
+                {apodData.explanation}
+            </div>
         </div>
     )
 }
-
 
 
 export default ApodDate;
