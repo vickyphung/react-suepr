@@ -18,7 +18,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      font-size: 1.3rem;
+      font-size: 1.85vw;
       transition: background-color 0.1 s;
 
       p {
@@ -44,11 +44,11 @@
       overflow: hidden;
       border-color: transparent;
       border-radius: 3px;
-      font-size: 2rem;
+      font-size: 2vw;
       transition: border-color 0.2s;
   
       &:focus {
-        border: 1px solid #e22bba;
+        border: 2px solid #34e6b0;
       }
     }
   }

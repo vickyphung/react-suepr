@@ -1,7 +1,5 @@
 import React, { useContext, useState } from "react";
-
 import storeApi from "../../utils/storeApi";
-
 import "./styles.scss";
 
 export default function InputCard({ setOpen, listId, type }) {

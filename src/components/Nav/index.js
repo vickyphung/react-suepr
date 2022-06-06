@@ -25,15 +25,8 @@ export default function Nav() {
         <li className="navLinks">
           <CustomLink  to="/about">About</CustomLink>
           <CustomLink  to="/apod">APOD</CustomLink>
-          {/* <CustomLink  to="/todo">To Do</CustomLink> */}
+          <CustomLink  to="/todo">To Do</CustomLink>
 
-          {/* <Link className="navLinks" to='/'>To Do</Link>
-          <Link className="navLinks" to='/'>Blog</Link>
-          <Link className="navLinks" to='/'>Places</Link>
-          <Link className="navLinks" to='/'>Reddit</Link>
-          <Link className="navLinks" to='/'>Links</Link>
-
-          <Link className="navLinks" to='/'>Philosophy</Link> */}
 
         </li>
       </div>
@@ -66,36 +59,3 @@ function CustomLink({ to, children, ...props }) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-// function Nav() {
-//   return (
-//     <div className='navContainer'>
-      
-//       <div className='navLinks'>
-//           /Home
-//           /to-do
-//           /blog
-//           /weather
-//           /sites
-//           /projects
-//             /apod
-//             /reddit
-//             (/art)
-//             /places
-
-//        </div>
-
-//     </div>
-//   )
-// }
-
-// export default Nav

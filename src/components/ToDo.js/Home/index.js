@@ -17,7 +17,7 @@ const initialState = () => {
     return store;
   }
 };
-
+console.log("PINK")
 export default function Home() {
   const [data, setData] = useState(initialState);
 
@@ -42,6 +42,7 @@ export default function Home() {
         [listId]: list,
       },
     };
+    console.log("PINKY")
     setData(newState);
     window.localStorage.setItem("dataToDo", JSON.stringify(newState));
   };
@@ -130,65 +131,65 @@ export default function Home() {
     window.localStorage.setItem("dataToDo", JSON.stringify(newState));
   };
 
-  const onDragEnd = (result) => {
-    const { destination, source, draggableId, type } = result;
+  // const onDragEnd = (result) => {
+  //   const { destination, source, draggableId, type } = result;
 
-    if (!destination) {
-      return;
-    }
+  //   if (!destination) {
+  //     return;
+  //   }
 
-    if (type === "list") {
-      const newListIds = data.listIds;
+  //   if (type === "list") {
+  //     const newListIds = data.listIds;
 
-      newListIds.splice(source.index, 1);
-      newListIds.splice(destination.index, 0, draggableId);
+  //     newListIds.splice(source.index, 1);
+  //     newListIds.splice(destination.index, 0, draggableId);
 
-      const newState = {
-        ...data,
-        listIds: newListIds,
-      };
-      setData(newState);
-      window.localStorage.setItem("dataToDo", JSON.stringify(newState));
+  //     const newState = {
+  //       ...data,
+  //       listIds: newListIds,
+  //     };
+  //     setData(newState);
+  //     window.localStorage.setItem("dataToDo", JSON.stringify(newState));
 
-      return;
-    }
+  //     return;
+  //   }
 
-    const sourceList = data.lists[source.droppableId];
-    const destinationList = data.lists[destination.droppableId];
-    const draggingCard = sourceList.cards.filter(
-      (card) => card.id === draggableId
-    )[0];
+  //   const sourceList = data.lists[source.droppableId];
+  //   const destinationList = data.lists[destination.droppableId];
+  //   const draggingCard = sourceList.cards.filter(
+  //     (card) => card.id === draggableId
+  //   )[0];
 
-    if (source.droppableId === destination.droppableId) {
-      sourceList.cards.splice(source.index, 1);
-      destinationList.cards.splice(destination.index, 0, draggingCard);
+  //   if (source.droppableId === destination.droppableId) {
+  //     sourceList.cards.splice(source.index, 1);
+  //     destinationList.cards.splice(destination.index, 0, draggingCard);
 
-      const newState = {
-        ...data,
-        lists: {
-          ...data.lists,
-          [sourceList.id]: destinationList,
-        },
-      };
-      setData(newState);
-      window.localStorage.setItem("dataToDo", JSON.stringify(newState));
-    } else {
-      sourceList.cards.splice(source.index, 1);
-      destinationList.cards.splice(destination.index, 0, draggingCard);
+  //     const newState = {
+  //       ...data,
+  //       lists: {
+  //         ...data.lists,
+  //         [sourceList.id]: destinationList,
+  //       },
+  //     };
+  //     setData(newState);
+  //     window.localStorage.setItem("dataToDo", JSON.stringify(newState));
+  //   } else {
+  //     sourceList.cards.splice(source.index, 1);
+  //     destinationList.cards.splice(destination.index, 0, draggingCard);
 
-      const newState = {
-        ...data,
-        lists: {
-          ...data.lists,
-          [sourceList.id]: sourceList,
-          [destinationList.id]: destinationList,
-        },
-      };
+  //     const newState = {
+  //       ...data,
+  //       lists: {
+  //         ...data.lists,
+  //         [sourceList.id]: sourceList,
+  //         [destinationList.id]: destinationList,
+  //       },
+  //     };
 
-      setData(newState);
-      window.localStorage.setItem("dataToDo", JSON.stringify(newState));
-    }
-  };
+  //     setData(newState);
+  //     window.localStorage.setItem("dataToDo", JSON.stringify(newState));
+  //   }
+  // };
   return (
     <StoreApi.Provider
       value={{
@@ -200,21 +201,17 @@ export default function Home() {
         deleteList
       }}
     >
-
             <div
               className="wrapper"
             >
               {data.listIds.map((listId, index) => {
                 const list = data.lists[listId];
-
                 return <List list={list} key={listId} index={index} />;
               })}
               <div>
                 <InputContainer type="list" />
               </div>
             </div>
-          
-
     </StoreApi.Provider>
   );
 }

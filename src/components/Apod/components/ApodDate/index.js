@@ -3,11 +3,9 @@ import React from "react";
 import axios from 'axios'
 import { useState, useEffect } from "react";
 
-
 const ApodDate = (props) => {
 const [apodData, setApodData] = useState({});
-
-
+const [readMore, setReadMore]=useState(false);
     useEffect(()=>{
         const fetchData = async () => {
             if (props.testDate) {
@@ -23,14 +21,20 @@ const [apodData, setApodData] = useState({});
     console.log(apodData)
 
     return (
-        <div>
-            <p>{apodData.title} and {apodData.date}</p>
+        <div className="dateContainer">
+        <div className='apodTitle'>{apodData.title}<br></br>
+        <span className='apodDate'>{apodData.date}</span></div>
+        <div className='apodImg'>
+          <a href={apodData.hdurl}>
             <img src={apodData.url} 
-            alt="NASA Astronomy Picture of the Day"
             className='apodImg'
             width="auto" 
-            title="Click to see HD image"
             />
+          </a>
+        </div>
+        <div className='apodExplanation'>
+        {apodData.explanation}
+        </div>
 
         </div>
     )

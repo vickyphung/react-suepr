@@ -7,7 +7,10 @@ export default function Navbar() {
       <nav>
         <div className="container">
           <div>
-            <h1>To Do</h1>
+            <img 
+            height="5%"
+            width="5%"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Diamond_Flat_Icon_Vector.svg/1024px-Diamond_Flat_Icon_Vector.svg.png" />
           </div>
         </div>
       </nav>

@@ -18,43 +18,39 @@
     justify-content: space-evenly;
     align-content: center;
     flex-direction: row;
-    border: 1px solid blue;
     margin: 1px;
     height: auto;
     width: 100%;
+    border: 1px dotted rgb(221, 211, 211);
+
 }
 
 .dateAndCal {
     display: flex;
-    flex-direction: column;
     flex-grow: 3;
 }
 
 .dateDash {
-    border: 1px solid gray;
     flex-grow: 1;
 }
 
 .calendarDash {
-    border: 1px solid gray;
     flex-grow: 1;
 }
 
 .weatherDash {
-    border: 1px solid gray;
     flex-grow: 1;
 }
 
 .dash{
-    flex-grow: 1;
+    flex-grow: .2;
 }
 
 
 
 .toDoDash{
-    height: 100%;
-    border: 3px solid orange;
     margin: 1px;
+    width: 98%;
 }
 
 .dateTime{

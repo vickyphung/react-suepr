@@ -3,7 +3,7 @@ import './style.css'
 
 export const DateTime = () => {
 
-    var [date,setDate] = useState(new Date());
+    const [date,setDate] = useState(new Date());
     
     useEffect(() => {
         const timer = setInterval(()=>setDate(new Date()), 1000 )
@@ -13,6 +13,12 @@ export const DateTime = () => {
     
     });
 
+
+
+
+
+
+    
     return(
         <div className='dateTime'>
            <div> <p> {date.toLocaleTimeString()}</p> </div>

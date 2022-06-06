@@ -25,5 +25,4 @@ yarn-error.log*
 
 .vscode
 .env
-.NOTES.md
-.LogLifecyle.js
+.NOTES
