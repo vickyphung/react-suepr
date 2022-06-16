@@ -49,7 +49,7 @@ export default function Card({ card, index, listId }) {
                     removeCard(index, listId);
                   }}
                 >
-                  ✖
+                  –
                 </button>
               </div>
             )}

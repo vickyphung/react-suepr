@@ -5,7 +5,7 @@ function ToDo() {
 
   return (
     <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
         <Home />
   
     </div>

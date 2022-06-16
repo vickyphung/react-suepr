@@ -35,7 +35,7 @@ function ApodHome(props) {
   return (
 
     <div id="apodSection" className='apodContainer'>
-      <div className='apodNasaHeader'>TODAY</div>
+      <div className='apodNasaHeader'>Astronomy Picture of the Day</div>
       
       <div className='apodContent'>
         <div className='apodTitle'>{apod.title}<br></br>

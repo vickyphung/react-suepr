@@ -19,9 +19,7 @@ function App() {
          <div className="">
           <Header />
         </div>
-        <div className="">
-          <ApodNav />
-        </div>
+
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

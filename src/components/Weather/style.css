@@ -7,7 +7,7 @@
   
   
   .weatherWid {
-    border: 5px solid pink;
+    border: 5px solid rgb(72, 161, 221);
     border-radius: 1em;
     background-color: #5bb5ec;
     color: white;
@@ -20,17 +20,30 @@
   }
   
   .weatherDetails {
-    font-size: 1.5vw;
-    color: rgb(243, 211, 231);
+    font-size: 1rem;
+    color: #d7e8f3;
     letter-spacing: .8px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* .weatherIcon {
-    animation-duration: 2s;
-    animation-name: slidein;
+  .weatherCity {
+    text-align: left;
+    padding: .5rem;
+    margin-left: .5rem;
+    color: #1d2dbb;
+  }
+
+  .weatherTemp{
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .weatherIcon {
+    width: 25%;
     }
+  
     
+    /*
+
     @keyframes slidein {
       300% {
         opacity: 0;

@@ -1,0 +1,27 @@
+.stopwatch {
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    width: fit-content;
+    background-color: pink;
+    border-radius: 5em;
+    padding: .15em;
+    margin: 1em;
+}
+
+.stopwatchTimer{
+    font-size: 2rem;
+    width: fit-content;
+    padding: 2rem;
+    border-radius: .9em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.stopwatchControl {
+    font-size: 1.75em;
+    width: fit-content;
+    padding: .9rem;
+    border-radius: .8em;
+    display: inline;
+}

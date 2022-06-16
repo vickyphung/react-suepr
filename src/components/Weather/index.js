@@ -50,21 +50,19 @@ function Weather() {
 //   }
   
   return (
-    <div className="weather">
         <div className="weatherWid">      
-          <h2>
-            {weatherData.temp} °F <br></br>
-            {weatherData.placeName} 
-          </h2>
-          <p className="weatherDetails">
-            {weatherData.weatherMain}, {weatherData.weatherDescription}
-          </p>
-          <img className="weatherIcon" alt="weather icon" src={`http://openweathermap.org/img/wn/${weatherData.iconCode}@2x.png`}/>
+          
+           <p className='weatherCity'> {weatherData.placeName}</p>
+          <p className='weatherTemp'>{weatherData.temp}°</p> 
+          
 
+          <img className="weatherIcon" alt="weather icon" src={`http://openweathermap.org/img/wn/${weatherData.iconCode}@2x.png`}/>
+          <p className="weatherDetails">
+           {weatherData.weatherDescription}
+          </p>
 
 
           </div>
-        </div>
       );
     }
 

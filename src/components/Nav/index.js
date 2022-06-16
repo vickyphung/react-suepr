@@ -11,23 +11,23 @@ export default function Nav() {
 
 <div className="navIcon">
           <Link to="/">
-            <img
+            {/* <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Bananas.svg/320px-Bananas.svg.png"
               title="/Home"
               alt="nav home"
               className="navIconImg"
-            />
-     
+            /> */}
+     <p className="navTitle">	✹ Under Another Sky</p>  	
           </Link>
-          <p className="navTitle">Under Another Sky</p>
+        
      </div>
         <div className="navLinks">
         <li className="navLinks">
           <CustomLink  to="/about">About</CustomLink>
           <CustomLink  to="/apod">APOD</CustomLink>
           <CustomLink  to="/todo">To Do</CustomLink>
-
-
+          📂☺	🖳🖂🕯📄✍✌
+Weather
         </li>
       </div>
 
