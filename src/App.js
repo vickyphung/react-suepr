@@ -5,30 +5,32 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import ToDo from "./components/ToDo.js";
+import Journal from "./components/Journal";
 
-import Apod from "./components/Apod";
-import ApodNav from './components/Apod/components/ApodNav';
-import Random from "./components/Apod/components/Random";
-import Date from "./components/Apod/components/Date";
+import Stuff from "./components/stuff";
+import Projects from "./components/Projects";
+import StopWatch from "./components/Stopwatch";
 
 function App() {
   return (
     <div>
       <Nav />
       <div className="AppContainer">
-         <div className="">
+         {/* <div className="">
           <Header />
-        </div>
+        </div> */}
 
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/todo" element={<ToDo />} />
             <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Journal />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/stuff" element={<Stuff />} />
 
-            <Route path="/apod" element={<Apod />} />
-            <Route path="/random" element={<Random />} />
-            <Route path="/date" element={<Date />} />
+            <Route path="/stopwatch" element={<StopWatch />} />
+
       
           </Routes>
         </div>

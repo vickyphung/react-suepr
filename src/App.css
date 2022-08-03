@@ -14,3 +14,28 @@
 body {
   overflow-x: hidden; 
 }
+
+.container {
+width: 99vw;
+height: auto;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding: 1em;
+
+border: 1px solid orange;
+
+}
+
+.heading, .content {
+  margin: 1em;
+  padding: 1em;
+
+  border: 1px solid orange;
+
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}

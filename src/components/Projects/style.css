@@ -1,0 +1,50 @@
+.projectList {
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid orange;
+}
+
+.projectListContainer {
+    display: flex;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid red;
+}
+
+.projectContainer {
+    display: flex;
+    padding: 1em;
+    border: 1px solid blue;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.projectTitle {
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid green;
+
+}
+
+.projectListItem {
+    text-decoration: none;
+    padding: 1.5em;
+    margin: 1em;
+    border: 1px solid green;
+    border-radius: 4.75em;
+}
+
+.projectListLink {
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid purple;
+    border-radius: 4.2em;
+
+}

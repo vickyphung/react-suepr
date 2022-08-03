@@ -1,7 +1,6 @@
-import './style.css'
 
 
-export default function Journal () {
+export default function Stuff () {
 
     
     return ( 
@@ -9,22 +8,22 @@ export default function Journal () {
 
             
             <div className="heading">
-                    <h1>Blog</h1> 
+                    <h1>Stuff</h1> 
             </div>
      
             <div className="blogContainer">  
 
 
-                <div className="blogTitle">
+                {/* <div className="blogTitle">
                     Title 
                 </div>
 
                 <div className="blogDetails">
-                    Date 
-                </div>
+                    Details 
+                </div> */}
 
                 <div className="blogEntry">
-                    ...Lorem ipsum... 
+                    Stuff
                 </div>
 
 

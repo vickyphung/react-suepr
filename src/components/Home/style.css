@@ -18,7 +18,8 @@
     justify-content: space-evenly;
     align-content: center;
     flex-direction: row;
-    margin: 1px;
+    margin: 1em;
+    padding: 1em;
     height: auto;
     width: 100%;
     border: 1px dotted rgb(221, 211, 211);
@@ -39,7 +40,7 @@
 }
 
 .weatherDash {
-    flex-grow: 1;
+    width: 100%;
 }
 
 .dash{

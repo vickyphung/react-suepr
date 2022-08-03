@@ -17,17 +17,20 @@ export default function Nav() {
               alt="nav home"
               className="navIconImg"
             /> */}
-     <p className="navTitle">	✹ Under Another Sky</p>  	
+     <p className="navTitle">	✹ Under Another Sky </p>  	
           </Link>
         
      </div>
         <div className="navLinks">
         <li className="navLinks">
-          <CustomLink  to="/about">About</CustomLink>
-          <CustomLink  to="/apod">APOD</CustomLink>
-          <CustomLink  to="/todo">To Do</CustomLink>
-          📂☺	🖳🖂🕯📄✍✌
-Weather
+          <CustomLink  to="/about">💠</CustomLink>
+          <CustomLink  to="/home">📅</CustomLink>
+          <CustomLink  to="/projects">🖳</CustomLink>
+          <CustomLink  to="/blog">🧠</CustomLink>
+          <CustomLink  to="/stuff">📂</CustomLink>
+        
+           
+          
         </li>
       </div>
 
@@ -53,9 +56,3 @@ function CustomLink({ to, children, ...props }) {
      </div>
   )
 }
-
-
-
-
-
-

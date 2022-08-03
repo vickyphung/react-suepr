@@ -56,7 +56,7 @@ function Weather() {
           <p className='weatherTemp'>{weatherData.temp}°</p> 
           
 
-          <img className="weatherIcon" alt="weather icon" src={`http://openweathermap.org/img/wn/${weatherData.iconCode}@2x.png`}/>
+          {/* <img className="weatherIcon" alt="weather icon" src={`http://openweathermap.org/img/wn/${weatherData.iconCode}@2x.png`}/> */}
           <p className="weatherDetails">
            {weatherData.weatherDescription}
           </p>

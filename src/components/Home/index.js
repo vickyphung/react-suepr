@@ -1,5 +1,4 @@
 import './style.css';
-import Intro from './Intro.js'
 import Weather from '../Weather';
 import DateTime from './DateTime';
 import ToDo from '../ToDo.js';
@@ -9,29 +8,20 @@ function Home() {
 
 
   return (
-    <div className="homeContainer">
+    <div className="container">
 
-      <div className='homeContent'>
+      <div className='heading'><h1>Dashboard</h1></div>
 
-
-       <div className='dashboard'>
-          <div className="dateAndCal">
-            <div className='dateDash'><DateTime /></div>
-          </div>
-          <div className='weatherDash'><Weather /></div>
+      <div className='content'>
+        <div className='dateDash'><DateTime /></div>
+        <div className='weatherDash'><Weather /></div>
+        
+        
+        {/* <div className='dash'><Stopwatch /></div> */}
+        
+        {/* <div className="toDoDash"><ToDo /></div> */}
       </div>
-
-      <div className='dash'><Stopwatch /></div>
       
-      <div className="toDoDash"><ToDo /></div>
-
-
-
-
-    
-
-
-      </div>
     </div>
   );
 }
