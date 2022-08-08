@@ -6,21 +6,20 @@ export default function Nav() {
   return (
       <nav className="nav">
 
-
         <div className="navContent">
 
-<div className="navIcon">
-          <Link to="/">
+        <div className="navIcon">
+          <Link className="navTitle" to="/">
             {/* <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Bananas.svg/320px-Bananas.svg.png"
               title="/Home"
               alt="nav home"
               className="navIconImg"
             /> */}
-     <p className="navTitle">	✹ Under Another Sky </p>  	
+            ✹ Under Another Sky
           </Link>
+        </div>
         
-     </div>
         <div className="navLinks">
         <li className="navLinks">
           <CustomLink  to="/about">💠</CustomLink>

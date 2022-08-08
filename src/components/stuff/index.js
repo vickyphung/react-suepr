@@ -1,33 +1,38 @@
+import './style.css'
+
+import Background from '../Background';
+
+
+
 
 
 export default function Stuff () {
 
-    
+
+
     return ( 
         <div className="container">
 
-            
-            <div className="heading">
-                    <h1>Stuff</h1> 
-            </div>
      
-            <div className="blogContainer">  
 
-
-                {/* <div className="blogTitle">
-                    Title 
+{/* 
+            <div class="para">
+                <div class="parainner">
+                <h3 class="animate-charcter"> Vicky Phung</h3>
                 </div>
-
-                <div className="blogDetails">
-                    Details 
-                </div> */}
-
-                <div className="blogEntry">
-                    Stuff
-                </div>
-
-
             </div>
+            <h2> Software Engineer</h2>
+
+ */}
+
+<Background />
+
+
+
+
+
+
+        </div>
 
          
 
@@ -46,6 +51,6 @@ export default function Stuff () {
      
      
      
-        </div>
+     
     )
 }

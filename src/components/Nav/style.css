@@ -1,36 +1,42 @@
 .nav {
     width: 100vw;
     height: auto;
+    background-color: transparent;
 }
+
 .navContent{
-    background-color: #333;
+    background-color: transparent;
     color: white;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     padding:  2rem;
+    /* transform: translateY(-100%) */
 }
 
-.navIcon{
+/* .nav:hover .navContent {
+    transform: translateY(0);
+  } */
+
+
+
+/* .navIcon{
     display:flex;
     gap: 2rem;
-
-}
-.navIconImg {
+} */
+/* .navIconImg {
     width: 5.75vw;
     padding: 4%;
-    }
+    } */
 
 
 .navTitle {
-    display: inline-flex;
+    color: rgb(231, 143, 61);
+    font-size: 1.5rem;
+    font-weight: 500;
     text-decoration: none;
-    color: antiquewhite;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 1.2em;
-
 }
+
 .navLinks {
     display: flex;
     align-items:center;
@@ -41,25 +47,25 @@
     display: flex;
     align-items: center;
     padding-right: .8rem;
-
 }
 
-  .listItem {
+.listItem {
     color: inherit;
     text-decoration: none;
     height: 100%;
     display: flex;
     align-items: center;
     padding: .25rem;
-
-    
-  }
-  
-  .nav div.active {
-    background-color: #555;
-    
-  }
-  
-  .listItem:hover {
     border: 1px solid #555;
+}
+  
+
+
+.nav div.active {
+    background-color: rgb(228, 136, 208);
+}
+
+.listItem:hover {
+    border: 1px solid #555;
+    background-color: rgb(218, 102, 202);
 }

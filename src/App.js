@@ -1,12 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav";
-import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import ToDo from "./components/ToDo.js";
 import Journal from "./components/Journal";
-
 import Stuff from "./components/stuff";
 import Projects from "./components/Projects";
 import StopWatch from "./components/Stopwatch";
@@ -16,9 +14,6 @@ function App() {
     <div>
       <Nav />
       <div className="AppContainer">
-         {/* <div className="">
-          <Header />
-        </div> */}
 
         <div>
           <Routes>

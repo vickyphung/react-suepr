@@ -1,0 +1,24 @@
+
+
+
+.para{
+    background: url("C:\Users\vicky\Desktop\SoftwareEngineering\personal\react_super\src\images\istockphoto-903044512-612x612.jpg") 100% fixed;
+
+   
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: 100% 100%;
+
+
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.parainner{
+    padding: 250px;
+}
+
